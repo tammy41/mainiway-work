@@ -1,0 +1,65 @@
+/* basic-css */
+/* 基本元素重置 */
+body{padding:0px; margin:0px;}
+body,button {font-size:14px; font-family:"微软雅黑"; color:#555;}
+div { margin:0px; padding:0px;}
+img{border:none;}
+a:link {color:#777; text-decoration:none;}
+a:visited {color:#777; text-decoration:none;}
+a:hover {color:#DB1856; text-decoration:none;}
+ul,li,dl,dd,dt { margin:0px; padding:0px; list-style:none;}
+ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,p{ margin:0px; padding:0px;}
+div,span.p,ul,li,input{padding: 0px; margin: 0px;}
+i{font-style:normal;}
+table{border-collapse:collapse;}
+samp{font-family:"Microsoft Yahei"}
+
+/*IEUP*/
+/*视情况考虑是否添加*/
+.IEup_bg{ width:100%; height:100%; position:absolute; z-index:9999; background-image:url(../images/IEup_bg.png); display:none;}
+.IEup_main{  background-color:#f8f8f8; width:540px; height:300px; margin:auto;
+    -webkit-border-radius: .6em;
+    -mos-border-radius: .6em;
+    -o-border-radius: .6em;
+    border-radius: .6em;}
+.IEup_main_title{ float:left; width:104px; height:83px; background-image:url(../images/notice.png); margin-left:218px; margin-top:10px;}
+.IEup_main_text{ float:left; width:520px; margin-left:10px; letter-spacing:1px; font-size:16px; color:#333; text-indent:32px; font-weight:bold; margin-top:10px;}
+.IEup_main_icon{ float:left; margin-left:30px; width:510px; height:80px; margin-top:30px;}
+.IEup_main_icon > ul > li{ float:left; width:80px; height:80px; margin-right:20px;}
+
+/*清除浮动*/
+.clearfix:after { content: ''; display: block; height: 0; clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear: both; }
+.fl{ float: left; }
+.fr{ float: right; }
+
+/* WebKit browsers */
+::-webkit-input-placeholder {
+    /*padding-left: 10px;*/
+    font-family: "微软雅黑";
+    color: #ddd;
+}
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
+    /*padding-left: 10px;*/
+    font-family: "微软雅黑";
+    color: #ddd;
+    opacity: 1;
+}
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
+    /*padding-left: 10px;*/
+    font-family: "微软雅黑";
+    color: #ddd;
+    opacity: 1;
+}
+/* Internet Explorer 10+ */
+:-ms-input-placeholder {
+    font-family: "微软雅黑";
+    color: #ddd;
+}
+
+a:link{
+    outline: none;
+}
