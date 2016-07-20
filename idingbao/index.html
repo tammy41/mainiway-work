@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to the official website idinbao</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="common/css/common.css" />
+    <!-- main.css | 页面主体样式 -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="iDin_index" id="iDin_index">
+            <i class="i-lanChange">
+                <img src="images/public/china.png" alt="" />
+            </i>
+            <div class="languageChange">
+                <p class="language_regionLanguageSelect"></p>
+                <ul class="languageSelect clearfix">
+                    <li onclick="aidingbaoChangeLanguage(this)" class="Cn">
+                        <img class="Language_nationlity1" src="images/public/china.png" alt="" />
+                        <span class="language_china"></span>
+                    </li>
+    
+                    <li onclick="aidingbaoChangeLanguage(this)" class="En">
+                        <img class="Language_nationlity2" src="images/public/uk.png" alt="" />
+                        <span class="language_uk"></span>
+                    </li>
+                    <li onclick="aidingbaoChangeLanguage(this)" class="Ge">
+                        <img class="Language_nationlity3" src="images/public/germany.png" alt="" />
+                        <span class="language_germany"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd"><img src="images/En.png"></div>
+            <div class="input">
+                <input type="text" placeholder="" class="language_IndexSeachValue" id="Idin_inputSeach" />
+                <i class="i-search"></i>
+            </div>
+            <div class="indexLink clearfix">
+                <a href="html/industry/industry.html" class="f-one language_iDinIndustry">行业</a>
+                <a href="html/design/designer.html" class="f-four language_iDinDesign">设计</a>
+                <a href="html/interactive/interactive.html" class="f-five language_iDinSave">互动</a>
+            </div>
+        </div>
+    </div>
+
+	<input type="hidden" id="home" />
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</html>
