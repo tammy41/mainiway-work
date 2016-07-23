@@ -1,0 +1,148 @@
+.industry_banner{
+	height:474px;
+}
+.industry_banner ul{
+	width:580px;
+	height:246px;
+	margin:0 auto;
+	padding-top:156px;
+}
+.industry_banner li{
+	width:180px;
+	height:206px;
+	margin-right:20px;
+	float: left;
+}
+.industry_banner li.last{
+	margin-right:0;
+}
+.industry_banner li p{
+	text-align: center;
+	margin-top:17px;
+	font-size: 18px;
+	color: #555757;
+}
+.industry_banner li.current p{
+	color:#db1856;
+}
+.industry_content ol{
+	width:1200px;
+	margin:0 auto;
+}
+.industry_content li{
+	width:1200px;
+}
+.industry_content_jewelry{
+	height:50px;
+	width:100%;
+	line-height: 50px;
+	font-size: 29px;
+	color:#e5ba69;
+	margin-bottom:12px;
+	border-bottom:1px solid #e5ba69;
+}
+.industry_content_car{
+	color:#a51f24;
+	border-bottom:1px solid #a51f24;
+}
+.industry_content_gift{
+	color:#a70966;
+	border-bottom:1px solid #a70966;
+}
+.industry_contentbg{
+	width:1200px;
+	height:363px;
+	position: relative;
+}
+.industry_contentbg p{
+	width:178px;
+	height:142px;
+	line-height: 47px;
+	text-align: center;
+	font-size: 16px;
+	color:#fff;
+	position: absolute;
+	top:103px;
+	left:50%;
+	margin-left:-89px;
+}
+.industry_contentbg .carpro{
+	width:252px;
+	height:190px;
+	font-size: 14px;
+	color:#fff;
+	top:162px;
+	left:936px;
+	margin-left:0;
+	text-align: left;
+}
+.industry_contentbg .giftpro{
+	width:463px;
+	height:41px;
+	line-height: 21px;
+	color:#225bab;
+	font-size: 16px;
+	top:74px;
+	left:425px;
+	margin-left:0;
+	text-align: left;
+	font-family: 'Myriad Pro';
+}
+.industry_contentbg .giftpro_right{
+	width:228px;
+	height:60px;
+	line-height: 20px;
+	left:940px;
+	top:281px;
+	margin-left:0;
+	text-align: left;
+	font-size:14px;
+}
+.industry_content .diamond{
+	height:244px;
+	width:1200px;
+}
+.industry_content .diamond_left{
+	float: left;
+	width:243px;
+	height:228px;
+	padding:16px 0 0 59px;
+}
+.industry_content .car_left{
+	width:292px;
+	height:188px;
+	padding:56px 12px 0 69px;
+}
+.gift_left{
+	float: left;
+	width:269px;
+	height:256px;
+	padding:49px 0 0 129px;
+}
+.industry_content .diamond_right{
+	float: right;
+	width:794px;
+	height:141px;
+	padding:103px 104px 0 0;
+	font-size: 16px;
+	line-height: 22px;
+	color:#777;
+}
+.industry_content .car_right{
+	width:758px;
+	height:120px;
+	padding:129px 69px 0 0;
+}
+.industry_content .gift_right{
+	float: right;
+	width:651px;
+	height:225px;
+	line-height: 20px;
+	padding:80px 151px 0 0;
+	font-size: 16px;
+	color:#777;
+	font-family: 'Myriad Pro';
+}
+.industry_content .gift{
+	height:305px;
+}
