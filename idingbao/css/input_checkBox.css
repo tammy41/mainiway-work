@@ -1,0 +1,19 @@
+/*input复选框样式开始*/
+.checkBox{
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    height: 13px;
+    width: 13px;
+    border: 1px solid #d1d1d1;
+}
+.checkBox:hover,.checkBox:focus{
+    outline: none;
+}
+.checkBox:checked{
+    background: url("../images/public/select.png") no-repeat center;
+    border: 1px solid #309dea;
+}
+/*input复选框样式结束*/
