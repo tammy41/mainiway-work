@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Payment</title>
+	<meta name="author" content="EWININFO" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+	<!--IE11 mode-->
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<!--IE10 mode-->
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+	<!--IE9 mode-->
+	<!-- base.css | 元素还原基础样式 -->
+	<link href="../../common/css/base.css" rel="stylesheet" />
+	<!--common.css | 公共样式-->
+	<link href="../../common/css/common.css" rel="stylesheet" />
+	<link href="../../css/industry/payOnline.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--<div class="header"></div>-->
+	<div id="container" class="w">
+		<!--成功提示-->
+		<div class="successtips">
+			<!--<img src="../../images/industry/pay_tick.png" />-->
+			<!--<p>订单提交成功</p>-->
+            <p class="sucfastpaytext">订单提交成功，请您尽快付款！</p>
+            <!--<p>订单总金额 : &nbsp&nbsp￥100.00 </p>
+            <p>请在24小时内付款,否则订单失效 !</p>-->
+			<p>订单号：1976987697649836 </p>
+			<p>交易流水：1578943759835985</p>
+            <a class="lookorderdetail" href="javascript:void(0);">查看订单详情</a>
+		</div>
+        <!--应付金额-->
+        <div class="forPay">
+            <p style="color: #777;float: left;">支付金额</p>
+            <span style="color: #DB1856; font-size: 18px;">￥12000.00</span>
+        </div>
+		<!--付款方式-->
+		<div class="payment clearfix">
+			<p>付款方式</p>
+			<form id="payment">
+				<input id="fullpayment" type="radio"  checked="checked" name="payment" value="Fullpayment" />
+                <label id="lbl_fullpayment" for="fullpayment">在线支付</label>
+				<input id="earnestmoney" type="radio" name="payment" value="earnestmoney" />
+                <label id="lbl_earnestmoney" for="earnestmoney" class="checked">门店支付</label>
+			</form>
+		</div>
+		<!--支付平台-->
+		<!--<div class="paymentplatform clearfix">
+			<p>支付平台</p>
+			<ul class="payList">
+				<li>
+					<input type="checkbox" />
+					<img src="../../images/industry/Alipay.png" alt="" />
+				</li>
+				<li>
+					<input type="checkbox" />
+					<img src="../../images/industry/Wechat.png" alt="" />
+				</li>
+				<li>
+					<input type="checkbox" />
+					<img src="../../images/industry/Unionpay.png" alt="" />
+				</li>
+			</ul>
+		</div>-->
+
+        <!--门店到货经销地址-->
+        <div class="receiveaddr" id="storepay">
+            <p>
+                <span class="rece_title">经销商地址</span>
+                <span>上海市徐汇区桂平路391号新漕河泾国际商务中心29楼</span>
+            </p>
+            <p>
+                <span class="rece_title">负责人</span>
+                <span>王二婶</span>
+            </p>
+            <p>
+                <span class="rece_title">联系方式</span>
+                <span>18888888888</span>
+            </p>
+            <p>
+                <span class="rece_title">支付剩余时间</span>
+                <span class="red">2小时20分32秒</span>
+            </p>
+            <!--确认提交-->
+            <button class="restorepay_btn">确定门店支付</button>
+        </div>
+        <!--在线支付方式-->
+        <div class="receiveaddr1" id="onlinepay">
+            <ul class="payList clearfix">
+                <li>
+                    <input type="checkbox" />
+                    <img src="../../images/industry/Alipay-01.png" alt="" style="margin-top:13.5px;"/>
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    <img src="../../images/industry/Wechat-01.png" alt=""  style="margin-top:24.5px;"/>
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    <img src="../../images/industry/Unionpay-01.png" alt="" style="margin-top:30.5px;"/>
+                </li>
+            </ul>
+            <button class="gorepay_btn">去付款</button>
+        </div>
+	</div> 
+    <!--门店支付弹出框-->   
+    <div class="payOnlinepopBox storepay">
+        <div class="payOnlinepopContent">
+            <h3>提示</h3>
+            <a class="payclose"></a>
+            <div class="paypoptips">
+                <div class="paypoptipstext">
+                    <img src="../../images/industry/exclamatory.png" />
+                    <p class="patipsdetail" style="">您已选择门店支付，请在规定时间内前往门店支付。</p>
+                    <p class="patipsdetail" style="margin-top:10px;">在规定时间内您随时可以选择在线支付。</p>
+                </div>
+                <p class="red" style="margin-top:16px;"><span class="seconds">5</span>s</p>
+                <p>5s后自动关闭此弹窗，跳转至“我的定制”</p>
+            </div>
+        </div>
+    </div>
+    <!--网上支付提示-->
+    <div class="payOnlinepopBox onlinepaytip">
+        <div class="payOnlinepopContent payOnlinepopContent1" id="beforepaysuctips">
+            <h3>网上支付提示</h3>
+            <a class="payclose"></a>
+            <div class="paypoptips">
+                <div class="paypoptipstext">
+                    <img src="../../images/industry/beforesuccess-01.png" />
+                    <p class="patipsdetail" style="">支付完成前，请不要关闭此支付验证窗口。</p>
+                    <p class="patipsdetail" style="margin-top:10px;">支付完成后，请根据您支付的情况点击下面按钮。</p>
+                </div>
+                <div class="successpay_btngroup">
+                    <a>支付遇到问题</a>
+                    <a id="successpay_redbtn">支付完成</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--未支付成功提示-->
+    <div class="payOnlinepopBox failpaytip">
+        <div class="payOnlinepopContent payOnlinepopContent1" id="beforepaysuctips">
+            <h3>未支付成功</h3>
+            <a class="payclose"></a>
+            <div class="paypoptips">
+                <div class="paypoptipstext">
+                    
+                    <p class="patipsdetail1" style="">支付宝余额不足！</p>
+                    <p class="patipsdetail1" style="margin-top:10px;">订单未支付成功，请重新支付！</p>
+                </div>
+                <a class="replayconfirm">确认</a>
+            </div>
+        </div>
+    </div>
+    <!--支付成功提示弹出框-->
+    <div class="payOnlinepopBox paysuccesstip">
+        <div class="payOnlinepopContent">
+            <h3>支付成功提示</h3>
+            <a class="payclose"></a>
+            <div class="paypoptips">
+                <div class="paypoptipstext">
+                    <p class="patipsdetail1" style="">订单支付成功</p>
+                </div>
+                <p class="red" style="margin-top:16px;"><span class="seconds">5</span>s</p>
+                <p>5s后自动关闭此弹窗，跳转至“我的定制”</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../common/js/commonheader.js"></script>
+<!---->
+<script type="text/javascript" src="../../js/industry/industryPublic.js"></script>
+<script type="text/javascript" src="../../js/industry/payOnline.js"></script>
+<!-- <script type="text/javascript" src="../../js/Loading_Language.js"></script>
+<script type="text/javascript" src="../../js/Cn_Language.js"></script>
+<script type="text/javascript" src="../../js/En_Language.js"></script> -->
+</html>
