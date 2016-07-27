@@ -1,0 +1,126 @@
+/*luxury.html样式开始*/
+.content {
+    width: 1246px;
+    margin: 50px auto;
+    height: 1350px;
+}
+.text > p {
+    padding: 10px 40px;
+    color: #989898;
+    font-size: 15px;
+}
+.imgDiv {
+    width: 50%;
+}
+.img3{
+    text-align:center;margin-top:80px;
+}
+.img3 img{
+    width:64px;
+    height:64px;
+}
+.img3 img:nth-child(2){
+    width:64px;
+    height:64px;
+    margin:0 30px;
+}
+.madeDiv {
+    width: 175px;
+    border: 1px solid #ba9171;
+    border-radius: 10px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 80px;
+}
+.madeDiv a {
+    font-size: 22px;
+    color: #ba9171;
+}
+.madeDiv a {
+    font-size: 22px;
+    color: #ba9171;
+}
+.ml {
+    margin-left: 40px;
+}
+.mr {
+    margin-left: -20px;
+}
+.contentDiv {
+    height: 450px;
+}
+/*list_luxury.html样式结束*/
+
+
+/*头部公用样式开始*/
+.hy{
+    background: #ba124e;
+}
+.childnavlist{
+    display: block;
+}
+.downList{
+    display: none;
+}
+.downList_2{
+    display: block;
+}
+
+
+/*oreder_luxury.html3D样式开始*/
+.arguDown {
+    width: 480px;
+    height: 73px;
+    background: #eaeaea;
+    margin-bottom: 12px;
+    text-align: center;
+    display: none;
+}
+.arguDown a{
+    display: inline-block;
+}
+.arguDown:last-of-type{
+    height: 120px;
+    padding: 20px 0;
+}
+.arguDown label{
+    display: inline-block;
+    color: #777;
+    width: 80px;
+}
+.arguDown input{
+    width: 340px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border: 1px solid #d1d1d1;
+    background: #eaeaea;
+}
+.arguDown>div{
+    margin-bottom: 13px;
+}
+.arguDown>div:last-of-type{
+    margin-bottom: 0;
+}
+.arguDown>div span{
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #d1d1d1;
+    color: #777;
+    cursor: pointer;
+    margin-right: 4px;
+}
+.arguDown>div span:last-of-type{
+    margin-right: 0;
+}
+.cz a{
+    margin: 21px 15px 0;
+}
+.jt a{
+    margin: 10px 15px;
+}
+/*oreder_luxury.html3D样式结束*/
