@@ -1,0 +1,48 @@
+/*list_car.html样式开始*/
+.carPic{
+	margin: 60px auto 100px;width: 1200px;
+}
+.carPic>ul:first-child{
+	margin-bottom: 30px;
+}
+.carPic>ul li{
+	position: relative;
+	height: 380px;
+}
+.link-btn{
+	padding: 7px 20px;
+	border: 1px solid #ba124e;
+	color: #ba124e !important;
+	position: absolute;
+}
+.link-btn1{
+	left: 90px;
+	bottom: 175px;
+}
+.link-btn2{
+	top: 190px;
+	left: 50px;
+}
+.link-btn3{
+	top: 200px;
+	left: 30px;
+}
+.link-btn4{
+	bottom: 30px;
+	right: 50px;
+}
+/*list_car.html样式结束*/
+
+/*头部公用样式开始*/
+.hy{
+	background: #ba124e;
+}
+.childnavlist{
+	display: block;
+}
+.downList{
+	display: none;
+}
+.downList_2{
+	display: block;
+}
