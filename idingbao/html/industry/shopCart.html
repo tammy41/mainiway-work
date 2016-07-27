@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Shopping Cart</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+    <!--input_checkBox共用组件样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/input_checkBox.css" />
+    <!--共用样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/industry/industryCommon.css" />
+    <!-- main.css | 页面主体样式 -->
+    <link rel="stylesheet" type="text/css" href="../../css/industry/shopCart.css" />
+</head>
+
+<body>
+<div class="main">
+    <div class="comInfor">
+        <ul class="conTitle clearfix">
+            <li style="width: 40%;">商品信息</li>
+            <li style="width: 15%;">单价（元）</li>
+            <li style="width: 15%;">数量</li>
+            <li style="width: 15%;">金额（元）</li>
+            <li style="width: 15%;">操作</li>
+        </ul>
+        <div style="position: relative;">
+            <table class="main_table">
+                <tr style="position: relative; border-bottom: #e4e4e4;">
+                    <th><input type="checkbox"></th>
+                    <th class="title"><i></i><span>北汽旗舰店</span></th>
+                    <th class="title" colspan="6"><a class="cp_shopcard" style="cursor: pointer; color: #db1856;"><i style="background-image: url(../../images/industry/shoppingcard.png); width:21px; height:14px; float:left;"></i><span style="display:block;float:left;">优惠券</span></a></th>
+                </tr>
+                <tr style="border-right:#dbdbdb solid 1px;">
+                    <td><input type="checkbox"></td>
+                    <td><img src="../../images/industry/shopCartCar.jpg"></td>
+                    <td>北汽EU260</td>
+                    <td>
+                        <ul class="configure">
+                            <li><span>颜色：</span>白色</li>
+                            <li><span>轮毂：</span>八幅运动款式</li>
+                            <li><span>天窗：</span>全景天窗</li>
+                            <li><span>内饰：</span>真皮</li>
+                            <li><span>大灯：</span>疝气大灯</li>
+                        </ul>
+                    </td>
+                    <td>¥12265.00</td>
+                    <td>
+                        <div class="num">
+                            <i class="minus"></i>
+                            <span>1</span>
+                            <i class="plus"></i>
+                        </div>
+                    </td>
+                    <td>¥12265.00</td>
+                    <td class="blue">删除</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="../../images/industry/shopCartCar.jpg"></td>
+                    <td>北汽EU260</td>
+                    <td>
+                        <ul class="configure">
+                            <li><span>颜色：</span>白色</li>
+                            <li><span>轮毂：</span>八幅运动款式</li>
+                            <li><span>天窗：</span>全景天窗</li>
+                            <li><span>内饰：</span>真皮</li>
+                            <li><span>大灯：</span>疝气大灯</li>
+                        </ul>
+                    </td>
+                    <td>¥12265.00</td>
+                    <td>
+                        <div class="num">
+                            <i class="minus"></i>
+                            <span>1</span>
+                            <i class="plus"></i>
+                        </div>
+                    </td>
+                    <td>¥12265.00</td>
+                    <td class="blue">删除</td>
+                </tr>
+            </table>
+            <!--优惠券弹出框-->
+            <div class="cardpopbox">
+                <ul>
+                    <li>
+                        <p class="cp_first fl">
+                            <span>北汽新用户优惠券</span>
+                            <span>2016.05.21 - 2016.06.30</span>
+                        </p>
+                        <p class="fl cpprice">￥5000</p>
+                        <a class="cp_btn fl" style="color:#fff;">领取</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="cp_first fl">
+                            <span>北汽新用户优惠券</span>
+                            <span>2016.05.21 - 2016.06.30</span>
+                        </p>
+                        <p class="fl cpprice">￥5000</p>
+                        <a class="cp_btn fl" style="color:#fff;">领取</a>
+                    </li>
+                </ul>
+                <ul style="border:0;">
+                    <li>
+                        <p class="cp_first fl">
+                            <span>北汽新用户优惠券</span>
+                            <span>2016.05.21 - 2016.06.30</span>
+                        </p>
+                        <p class="fl cpprice">￥5000</p>
+                        <a class="cp_btn fl" style="color:#fff;">领取</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <table class="main_table">
+            <tr>
+                <th><input type="checkbox"></th>
+                <th class="title" colspan="7"><i></i><span>北汽旗舰店</span></th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="../../images/industry/shopCartCar.jpg"></td>
+                <td>北汽EU260</td>
+                <td>
+                    <ul class="configure">
+                        <li><span>颜色：</span>白色</li>
+                        <li><span>轮毂：</span>八幅运动款式</li>
+                        <li><span>天窗：</span>全景天窗</li>
+                        <li><span>内饰：</span>真皮</li>
+                        <li><span>大灯：</span>疝气大灯</li>
+                    </ul>
+                </td>
+                <td>¥12265.00</td>
+                <td>
+                    <div class="num no">
+                        <i class="minus"></i>
+                        <span>1</span>
+                        <i class="plus"></i>
+                        <small>库存不足</small>
+                    </div>
+                </td>
+                <td>¥12265.00</td>
+                <td class="blue">删除</td>
+            </tr>
+           
+        </table>
+        <ul class="bilMoney clearfix">
+            <li class="fr">
+                <a href="billing.html" class="bilButtom">结算</a>
+            </li>
+            <li class="fr" style="margin-right: 50px;">合计：<span class="red total_Price">￥0.00</span>
+            </li>
+            <li class="fr" style="margin-right: 50px;">已选择<span class="red quantity">0</span>件商品
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../common/js/headAndFoot.js"></script>
+<script type="text/javascript" src="../../js/industry/industryPublic.js"></script>
+<script type="text/javascript" src="../../js/industry/shopCart.js"></script>
+<!-- <script type="text/javascript" src="../../js/Loading_Language.js"></script>
+<script type="text/javascript" src="../../js/Cn_Language.js"></script>
+<script type="text/javascript" src="../../js/En_Language.js"></script> -->
+</html>
