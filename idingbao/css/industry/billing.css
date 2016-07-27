@@ -1,0 +1,551 @@
+/*billingҳ����ʽ*/
+
+.stepbox {
+	width: 1200px;
+	height: 88px;
+	margin: 20px auto;
+	border: 1px solid #d1d1d1;
+}
+
+.stepflex {
+	width: 900px;
+	margin: 20px auto;
+}
+
+.stepflex dl {
+	float: left;
+	position: relative;
+	width: 180px;
+	border-bottom: 2px solid #ccc;
+}
+
+dl.doing {
+	border-bottom-color: rgb(20, 142, 225);
+}
+
+.stepflex dt {
+	position: relative;
+	bottom: -28px;
+	background: rgb(20, 142, 225);
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.stepflex dd {
+	position: relative;
+	bottom: 8px;
+}
+
+.billing {
+	width: 1200px;
+	margin: 40px auto;
+}
+
+.address div,
+.addAddress {
+	float: left;
+	width: 210px;
+	height: 80px;
+	padding: 20px;
+	border: 1px solid #d1d1d1;
+	color: #777;
+	position: relative;
+	margin-right: 30px;
+}
+
+.address>div a {
+	display: none;
+	font-size: 12px;
+}
+
+.address>div:hover a {
+	display: block;
+}
+
+.addAddress {
+	display: block;
+	margin-right: 0;
+	cursor: pointer;
+}
+
+.addAddress img {
+	display: block;
+	margin: 10px auto;
+}
+
+.address h2,
+.pay h2,
+.comInfor h2 {
+	font-size: 14px;
+	color: #555757;
+}
+
+.address h2,
+.pay h2,
+.comInfor h2 {
+	color: #999;
+	line-height: 28px;
+	font-weight: normal;
+}
+
+.pay h2 {
+	margin-top: 50px;
+}
+
+.address h3 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #333333;
+}
+
+.address h3 span {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.address h4 {
+	font-weight: normal;
+	color: #555757;
+}
+
+.address h4,
+.address p {
+	font-size: 12px;
+	line-height: 24px;
+	color: #555757;
+}
+
+.address p {
+	width: 210px;
+	height: 24px;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	color: #555757;
+}
+
+.address span,
+.pay span {
+	margin-right: 4px;
+}
+
+.address span:last-child,
+.pay span:last-child {
+	margin-right: 0;
+}
+
+.address input {
+	top: 22px;
+	right: 20px;
+}
+
+.edit,
+.delete,
+.set {
+	padding: 5px;
+	color: #777;
+}
+
+.edit:hover,
+.delete:hover {
+	color: #db1856;
+}
+
+.pay {
+	margin: 40px 0;
+	position: relative;
+}
+
+.pay p>a:hover {
+	color: #309dea;
+}
+
+.deliveryList li,
+.payList li {
+	margin-right: 30px;
+	margin-bottom: 10px;
+	float: left;
+	width: 160px;
+	height: 30px;
+	border: 1px solid #d1d1d1;
+	line-height: 30px;
+	text-align: center;
+	color: #555757;
+	cursor: pointer;
+}
+
+.payList li:last-child {
+	margin-right: 20px;
+}
+
+.pay span {
+	line-height: 30px;
+	color: #309dea;
+}
+
+.benefit li {
+	float: left;
+	margin-right: 160px;
+	width: 220px;
+}
+
+.benefit li input {
+	margin-right: 20px;
+	float: left;
+	height: 40px;
+}
+
+.conTitle {
+	border: 1px solid #d1d1d1;
+	margin-top: 20px;
+}
+
+.comInfor p {
+	font-size: 12px;
+	color: #777777;
+	margin-top: 10px;
+}
+
+.comInfor p span {
+	color: #333333;
+}
+
+.comInfor table {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	margin-top: 15px;
+}
+
+.comInfor table tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.comInfor tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.comInfor table th {
+	font-weight: normal;
+	font-size: 12px;
+	padding: 10px 0;
+	border-bottom: 1px solid #DCDCDC;
+}
+
+.comInfor table td {
+	font-size: 12px;
+	text-align: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #DCDCDC;
+}
+
+.comInfor table td img {
+	margin-left: 30px;
+}
+
+.comInfor table td p {
+	margin-top: 20px;
+	margin-left: 30px;
+	text-align: left;
+}
+
+.comInfor table td a:hover {
+	color: #309dea;
+}
+
+.conTitle li,
+.conList li {
+	color: #555757;
+}
+
+.conList li>span {
+	font-weight: bold;
+}
+
+.retureCar {
+	color: #db1856 !important;
+	line-height: 40px;
+	margin-right: 40px;
+}
+
+.submitOrder {
+	display: block;
+	line-height: 40px;
+	background: #db1856;
+	color: #fff !important;
+	padding: 0 80px;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.selectAddress {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	color: #777;
+	/*display: none;*/
+	top: 70px;
+	left: 192px;
+}
+
+.selectText {
+	font-size: 14px;
+	width: 120px;
+}
+
+.selectMargin {
+	margin: auto 10px;
+}
+
+.selectAddress p {
+	line-height: 32px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-left: 15px;
+}
+
+.selectAddress center {
+	padding: 20px 15px 10px;
+}
+
+.selectAddress ul {
+	padding: 0 15px 30px;
+}
+
+.selectAddress ul li {
+	line-height: 24px;
+	cursor: pointer;
+}
+
+.selectAddress ul li:hover {
+	color: #309dea;
+}
+
+.navlist {
+	display: none;
+	color: #777;
+}
+
+.payInfor {
+	text-align: right;
+	line-height: 28px;
+}
+
+.payInfor p:nth-of-type(3) {
+	margin-top: 10px;
+}
+
+.payInfor p:nth-of-type(6) {
+	margin-top: 10px;
+	color: #db1856;
+	font-size: 18px;
+}
+
+.payInfor span {
+	display: inline-block;
+	width: 100px;
+}
+
+
+/*弹窗css*/
+
+.Custom_details{
+	position: absolute;
+	left: 40%;
+	top: 557px;
+	width: 484px;
+	height: 277px;
+	border: 1px solid #DDDDDD;
+	background: #FFFFFF;
+	box-shadow: 1px 1px 5px #999999;
+	display: none;
+}
+
+.Custom_details h2,.Add_receipt_address h2{
+	position: relative;
+	font-size: 16px;
+	font-weight: normal;
+	color: #333333;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+ h2 .closebtn {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	display: inline-block;
+	width: 20px;
+	height: 2px;
+	background: black;
+	line-height: 0;
+	font-size: 0;
+	vertical-align: middle;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+h2 .closebtn:after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 2px;
+	background:black;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.Custom_details p {
+	color: #777777;
+	font-size: 14px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+.Custom_details p span {
+	display: inline-block;
+	width: 113px;
+}
+.Add_receipt_address{
+	position: absolute;
+	left:30%;
+	top: 30%;
+	width: 680px;
+	height: 502px;
+	border: 1px solid #DDDDDD;
+	background: #FFFFFF;
+	box-shadow: 1px 1px 5px #999999;
+	display: none;
+}
+.Add_receipt_address ul{
+	border-bottom: 1px solid #DDDDDD;
+}
+.Add_receipt_address ul li{
+	margin-bottom: 18px;
+}
+.Add_receipt_address ul li label{
+	width: 139px;
+	line-height: 30px;
+	text-align: right;
+	display: inline-block;
+	float: left;
+	margin-right: 31px;
+}
+.Add_receipt_address ul li input{
+	width: 400px;
+	height: 30px;
+	border: 1px solid #DDDDDD;
+	
+}
+.Add_receipt_address ul li textarea{
+	width: 400px;
+	resize: none;
+	border: 1px solid #ddd;
+}
+.Add_receipt_address .area_select{
+    position: relative;
+    display: inline-block;
+}
+.cancelBtn,.saveBtn{
+	margin: 15px auto;
+	float: left;
+	display: block;
+	width: 100px;
+	height: 24px;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+}
+.Add_receipt_address a:hover{
+	color: #DB1856;
+	border-color: #DB1856;
+}
+.Add_receipt_address .cancelBtn{
+	margin-left: 225px;
+	margin-right: 32px;
+}
+
+.area_select p{
+	padding-left: 8px;
+	border: 1px solid #ddd;
+	line-height: 34px;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+}
+.area_select p:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 8px;
+    top: 50%;
+    margin-top: -2px;
+    right: 5px;
+    background:url(../../images/industry/downArrow.png) no-repeat;
+    z-index: 999;
+}
+.Select_dealer{
+	position: absolute;
+	left: 400px;
+	top: 30%;
+	width: 680px;
+	height: 500px;
+	border: 1px solid #DDDDDD;
+	background: #FFFFFF;
+	box-shadow: 1px 1px 5px #999999;
+	display: none;
+}
+.Select_dealer h2{
+	position: relative;
+	font-size: 16px;
+	font-weight: normal;
+	color: #333333;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #DDDDDD;
+	}
+.Select_dealer .dealerbox{
+	height: 403px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.Select_dealer table{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+.Select_dealer table th{
+	color: #666666;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 10px 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+.Select_dealer table td{
+	color: #333333;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 20px 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+.Select_dealer table td a{
+	color: #138bdf;
+}
+
+.Select_dealer .surebtn{
+	display: block;
+	width: 100px;
+	height: 24px;
+	margin: 14px auto;
+	color: #DB1856;
+	line-height: 24px;
+	text-align: center;
+	border: 1px solid #DB1856;
+}
