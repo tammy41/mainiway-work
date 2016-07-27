@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Billing</title>
+		<meta name="author" content="EWININFO" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+		<!--IE11 mode-->
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+		<!--IE10 mode-->
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+		<!--IE9 mode-->
+		<!-- base.css | 元素还原基础样式 -->
+		<link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+		<!--common.css | 公共样式-->
+		<link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+		<!--共用样式-->
+		<link rel="stylesheet" type="text/css" href="../../css/industry/industryCommon.css" />
+		<!--input_checkBox共用组件样式-->
+		<link rel="stylesheet" type="text/css" href="../../css/input_checkBox.css" />
+		<!--省市区三级联动组件样式-->
+		<link rel="stylesheet" type="text/css" href="../../css/linkage.css" />
+		<!-- billing.css | billing页面样式 -->
+		<link rel="stylesheet" type="text/css" href="../../css/industry/billing.css" />
+	</head>
+
+	<body>
+		<!--结算页面结构开始-->
+		<div class="stepbox">
+			<div class="stepflex">
+				<dl class="doing">
+					<dt></dt>
+					<dd style="left: -15px;">拍下商品</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd style="left: -25px;">填写核对订单</dd>
+				</dl>
+				<dl>
+					<dt style="background: #CCCCCC;"></dt>
+					<dd style="left: -8px;">付款</dd>
+				</dl>
+				<dl>
+					<dt style="background: #CCCCCC;"></dt>
+					<dd style="left: -15px;">确认收货</dd>
+				</dl>
+				<dl style="border: none;">
+					<dt style="background: #CCCCCC;"></dt>
+					<dd style="left: -8px;">评价</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="billing clearfix">
+			<div class="address clearfix">
+				<h2>收货地址</h2>
+				<div>
+					<h3>Kevin　<span>(默认)</span></h3>
+					<h4>18888888888</h4>
+					<p><span>浙江省</span><span>杭州市</span><span>滨江区</span><span>滨江路</span><span>53号</span></p>
+					<input type="checkbox" class="checkBox">
+					<a href="javascript:void(0);" class="delete fr">删除</a>
+					<a href="javascript:void(0);" class="edit fr">修改</a>
+					<a href="javascript:void(0);" class="set fr">设为默认</a>
+				</div>
+				<div>
+					<h3>KKKK</h3>
+					<h4>18355325628</h4>
+					<p><span>浙江省</span><span>杭州市</span><span>滨江区</span><span>滨江路</span><span>53号</span></p>
+					<input type="checkbox" class="checkBox">
+					<a href="javascript:void(0);" class="edit fr">修改</a>
+					<a href="javascript:void(0);" class="delete fr">删除</a>
+					<a href="javascript:void(0);" class="set fr">设为默认</a>
+				</div>
+				<div>
+					<h3>KKKK</h3>
+					<h4>18355325628</h4>
+					<p><span>浙江省</span><span>杭州市</span><span>滨江区</span><span>滨江路</span><span>53号</span></p>
+					<input type="checkbox" class="checkBox">
+					<a href="javascript:void(0);" class="edit fr">修改</a>
+					<a href="javascript:void(0);" class="delete fr">删除</a>
+					<a href="javascript:void(0);" class="set fr">设为默认</a>
+				</div>
+				<a href="JavaScript:;" class="addAddress"><img src="../../images/industry/shopCartAdd.png" alt="" /></a>
+			</div>
+			<div class="pay clearfix">
+				<h2>选择配送方式</h2>
+				<ul class="deliveryList fl">
+					<li class="onlinePay">物流快递</li>
+					<li class="outlinePay">线下自提</li>
+				</ul>
+				<p class="fl">
+					<span>上海市</span><span>徐汇区</span><span>桂平路</span><span>391号</span><span>A座</span><span>1楼</span><span>全家便利店：021-8888888</span>　<a id="Dealer_details"  href="javascript:void(0);">重新选择</a>　|　<ahref="javascript:void(0);">经销商详情</a>
+				</p>
+				<h2>选择支付类型</h2>
+				<ul class="payList fl">
+					<li class="onlinePay">全额付款</li>
+					<li class="outlinePay">定金500元</li>
+				</ul>
+				<div class="selectAddress">
+					<p>选择线下付款门店地址</p>
+					<center>
+						<select id="loc_province" class="selectText"></select>
+						<select id="loc_city" class="selectText selectMargin"></select>
+						<select id="loc_town" class="selectText"></select>
+					</center>
+					<ul>
+						<li>上海市 徐汇区 桂平路 391号 A座 1楼 全家便利店021-8888888</li>
+						<li>上海市 徐汇区 桂平路 391号 A座 1楼 全家便利店021-8888888</li>
+						<li>上海市 徐汇区 桂平路 391号 A座 1楼 全家便利店021-8888888</li>
+						<li>上海市 徐汇区 桂平路 391号 A座 1楼 全家便利店021-8888888</li>
+						<li>上海市 徐汇区 桂平路 391号 A座 1楼 全家便利店021-8888888</li>
+						<li>上海市 徐汇区 桂平路 391号 A座 1楼 全家便利店021-8888888</li>
+					</ul>
+				</div>
+				<h2>使用优惠/抵用</h2>
+				<ul class="benefit">
+					<li><input type="radio" value="" /><b>优惠金额:5000元</b><br />北汽EU260新用户代金券</li>
+					<li><input type="radio" value="" /><b>优惠金额:5000元</b><br />北汽EU260新用户代金券</li>
+					<li><input type="radio" value="" /><b>优惠金额:5000元</b><br />北汽EU260新用户代金券</li>
+
+				</ul>
+				
+			</div>
+			<div class="comInfor">
+				
+				<h2>商品信息</h2>
+				<p>工厂：<span>佐卡伊珠宝求婚钻石戒指旗舰店</span>　　　　联系电话：<span>400-820-8888</span>　　　　交货时间：<span>2015-11-9</span></p>
+				<table>
+					<tbody>
+						<tr>
+						<th style="width: 33%;">商品</th>
+						<th style="width: 17%;">数量</th>
+						<th style="width: 17%;">总金额</th>
+						<th style="width: 17%;">预付款</th>
+						<th style="width: 16%;">操作</th>
+					</tr>
+					<tr>
+						<td><img src="../../images/industry/present_sketch-1.png" alt="" class="fl" />
+							<p class="fl">佐卡伊珠宝白18K金42分<br /> 求婚钻石戒指</p></td>
+						<td>x1</td>
+						<td style="font-weight: bold;">￥265.00</td>
+						<td style="font-weight: bold;">￥100.00</td>
+						<td><a id="check_Custom_details">查看定制详情</a></td>
+					</tr>
+					</tbody>
+					
+				</table>
+				<!--<ul class="conTitle clearfix">
+					<li style="width: 33%;">商品</li>
+					<li style="width: 17%;">数量</li>
+					<li style="width: 17%;">总金额</li>
+					<li style="width: 17%;">预付款</li>
+					<li style="width: 16%;">操作</li>
+				</ul>
+				
+				<div class="comT">
+					<ul class="conList clearfix">
+						<li style="width: 33%;display: table;" class="comImg">
+							<img src="../../images/industry/present_sketch-1.png" alt="" class="fl" />
+							<p>佐卡伊珠宝白18K金42分求婚钻石戒指</p>
+						</li>
+						<li style="width: 17%;">x1</li>
+						<li style="width: 17%;"><span>￥265.00</s pan></li>
+						<li style="width: 17%;">￥<span>100.00</span></li>
+						<li style="width: 16%;"><a href="#">查看定制详情</a></li>
+					</ul>-->
+					<!--<ul class="conList clearfix">
+						<li style="width: 43%;" class="comImg">
+							<img src="../../images/industry/shopCartCar.jpg" alt="" class="fl" />
+							<p>汽车定制</p>
+						</li>
+						<li style="width: 19%;">￥<span>3020.00</span></li>
+						<li style="width: 19%;">1</li>
+						<li style="width: 19%;">￥<span>3020.00</span></li>
+					</ul>
+					<ul class="conList clearfix">
+						<li style="width: 43%;" class="comImg">
+							<img src="../../images/industry/shopCartLuxury.jpg" alt="" class="fl" />
+							<p>挚爱</p>
+						</li>
+						<li style="width: 19%;">￥<span>3020.00</span></li>
+						<li style="width: 19%;">2</li>
+						<li style="width: 19%;">￥<span>3020.00</span></li>
+					</ul>-->
+				</div>
+				<div class="payInfor">
+					<p>经销商地址:　上海徐汇区桂平路391号</p>
+					<p>取件人：　Kevin　18888888888</p>
+					<p>商品总金额：　￥10000.00</p>
+					<p>优惠金额：　　￥0.00</p>
+					<p>本次应付:<span>￥10000.00</span></p>
+					<p>实际支付: <span>￥10000.00</span></p>
+				</div>
+			<a href="javascript:void(0);" class="submitOrder fr">提交订单</a>
+			<!--<a href="shopCart.html" class="retureCar fr">返回购物车</a>-->
+		</div>
+		<!--结算页面结构结束-->
+		<!--页面弹窗部分-->
+		<!--定制详情-->
+		<div class="Custom_details Popup">
+			<h2>定制详情 <a href="javascript:void(0);" class="closebtn"></a></h2>
+			<p><span>钻石</span>GA5355555555</p>
+			<p><span>材质</span>黄金</p>
+			<p><span>戒托</span>托举爱情</p>
+			<p><span>戒圈</span>挚爱</p>
+			<p><span>尺寸</span>8</p>
+			<p><span>刻字</span>You are the one  For my love</p>
+			<p><span>交货时间</span>2015-12-29  16:41:30</p>
+		</div>
+		<!--新增收货地址-->
+		<div class="Add_receipt_address Popup clearfix">
+			<h2>新增收货地址 <a href="javascript:void(0);" class="closebtn"></a></h2>
+			<ul>
+				<li><label>收货人</label><input type="text" name="consignee" value="" /></li>
+				<li class="clearfix">
+					<label>所在区域</label>
+					<div class="area_select fl" style="margin-right:10px;">
+                    <p class="sl_province" style="width:118px;">省</p>
+                    
+                	</div>
+                	<div class="area_select fl" style="margin-right:10px;">
+                    <p class="sl_province" style="width:118px;">市</p>
+                    
+                	</div>
+                	<div class="area_select fl" style="margin-right:10px;">
+                    <p class="sl_province" style="width:118px;">区</p>
+                    
+                	</div>
+				</li>
+				<li><label>详细地址</label><textarea maxlength="100"></textarea></li>
+				<li><label>手机号码</label><input type="text" name="consignee" value="" /></li>
+				<li><label>固定电话</label><input type="text" name="consignee" value="" /></li>
+				<li><label>电子邮箱</label><input type="text" name="consignee" value="" /></li>
+				<li><label>备　　注</label><input type="text" name="consignee" value="" /></li>
+			</ul>
+			<a class="cancelBtn" href="#">取消</a>
+			<a class="saveBtn" href="#">保存</a>
+		</div>
+		<!--选择经销商-->
+		<div class="Select_dealer Popup">
+			<h2>选择经销商 <a href="javascript:void(0);" class="closebtn"></a></h2>
+			<div class="dealerbox">
+				<table>
+				<tr>
+					<th>经销商名称</th>
+					<th>联系人</th>
+					<th>手机号码</th>
+					<th>固定电话</th>
+					<th>地址</th>
+					<th width="10%">操作</th>
+				</tr>
+				<tr>
+					<td><input type="radio" name="" id="" value="" />上海市徐汇区经销商</td>
+					<td>王大婶</td>
+					<td>13888888888</td>
+					<td>021-88888888</td>
+					<td>上海市 徐汇区</td>
+					<td><a href="">详情</a></td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="" id="" value="" />上海市徐汇区经销商</td>
+					<td>王大婶</td>
+					<td>13888888888</td>
+					<td>021-88888888</td>
+					<td>上海市 徐汇区</td>
+					<td><a href="">详情</a></td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="" id="" value="" />上海市徐汇区经销商</td>
+					<td>王大婶</td>
+					<td>13888888888</td>
+					<td>021-88888888</td>
+					<td>上海市 徐汇区</td>
+					<td><a href="">详情</a></td>
+				</tr>
+			</table></div>
+			
+			<div><a href="#" class="surebtn">确定</a></div>
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../common/js/headAndFoot.js"></script>
+	<!--省市区三级联动效果-->
+	<script src="../../js/location.js"></script>
+	<script src="../../js/select2.js"></script>
+	<script src="../../js/select2_locale_zh-CN.js"></script>
+
+	<script type="text/javascript" src="../../js/industry/industryPublic.js"></script>
+	<script type="text/javascript" src="../../js/industry/billing.js"></script>
+
+	<!-- <script type="text/javascript" src="../../js/Loading_Language.js"></script>
+<script type="text/javascript" src="../../js/Cn_Language.js"></script>
+<script type="text/javascript" src="../../js/En_Language.js"></script> -->
+
+</html>
