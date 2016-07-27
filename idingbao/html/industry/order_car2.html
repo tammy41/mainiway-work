@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Custom Made Order</title>
+	<meta name="author" content="EWININFO" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+	<!--IE11 mode-->
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<!--IE10 mode-->
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+	<!--IE9 mode-->
+	<!-- base.css | 元素还原基础样式 -->
+	<link href="../../common/css/base.css" rel="stylesheet" />
+	<!--common.css | 公共样式-->
+	<link href="../../common/css/common.css" rel="stylesheet" />
+	<!--industry公用模块样式-->
+	<link rel="stylesheet" type="text/css" href="../../css/industry/industryCommon.css" />
+	<!--3d.css-->
+	<link href="../../css/industry/showCar.css" rel="stylesheet" />
+	
+</head>
+
+<body class="payfor cars" tagert="list_car.html">
+	<div class="info cl">
+		<div class="mbxnav">
+			<span class="language_location"></span>
+			<a href="../../index.html" class="language_index">首页</a>
+			<a href="industry.html" class="language_iDinIndustry">行业</a>
+			<a href="list_car.html" class="language_iDinCar">汽车</a>
+			<a href="order_car.html" class="language_customCar">汽车定制</a>
+		</div>
+		<div class="imgzoom">
+			
+			<div id="unityPlayer">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+				<div class="broken">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+						<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
+			
+			<div class="imgcontainer">
+				<span _index="1"><img src="../../images/industry/car_small.jpg" alt="" /></span>
+				<span _index="2"><img src="../../images/industry/car_pic2.jpg" alt="" /></span>
+				<span _index="3"><img src="../../images/industry/car_pic3.jpg" alt="" /></span>
+			</div>
+		</div>
+		<div class="infodetail">
+			<h2 class="language_customCar">北汽新能源EU260</h2>
+			<p class="language_IntroductionCar">纵然狂风险途，依然独主沉浮；从容踏越险径，称霸地表极限。</p>
+			<div class="price">￥3020.00</div>
+			<div class="chooseOrder">
+				<div class="argu cl"><span class="language_color">颜色</span><a class="language_white" href="javascript:void(0);">白色</a></div>
+				<div class="arguDown" id="swithColor">
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/color/1-1.png" onclick="" /></a>
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/color/1-2.png" onclick="colorReplacement('#F0FFFF')" /></a>
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/color/1-3.png" onclick="colorReplacement('#DC143C')" /></a>
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/color/1-4.png" onclick="colorReplacement('#778899')" /></a>
+				</div>
+				<div class="argu cl"><span class="language_Hub">轮毂</span><a class="language_Hub1" href="javascript:void(0);">铝合金</a></div>
+				<div class="arguDown" id="swithParter">
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/wheel/2-1.png" onclick="downloadWheelHub('http://www.xne110.tk/lungu1.WebPlayer.unity3d')" /></a>
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/wheel/2-2.png" onclick="downloadWheelHub('http://www.xne110.tk/lungu2.WebPlayer.unity3d')" /></a>
+				</div>
+				<div class="argu cl"><span class="language_Dormer">天窗</span><a class="language_Dormer2" href="javascript:void(0);">全景天窗</a></div>
+				<div class="arguDown" id="swithDormer">
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/dormer/3-1.png" alt="" /></a>
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/dormer/3-2.png" alt="" /></a>
+				</div>
+				<div class="argu cl"><span class="language_Interior">内饰</span><a class="language_dermo" href="javascript:void(0);">真皮</a></div>
+				<div class="arguDown" id="swithInterior">
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/interior/4-1.png" alt="" /></a>
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/interior/4-2.png" alt="" /></a>
+				</div>
+				<div class="argu cl"><span class="language_Headlight">大灯</span><a class="language_Headlight1" href="javascript:void(0);">氙气大灯</a></div>
+				<div class="arguDown" id="swithLamp">
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/lamp/5-1.png" alt="" /></a>
+					<a href="javascript:void(0);"><img src="../../images/industry/carImg/component/lamp/5-2.png" alt="" /></a>
+				</div>
+				<div class="argu last cl"><span class="language_Lettering">刻字</span><a class="language_SelectMessage" href="javascript:void(0);">点击选择刻字内容</a></div>
+				<div class="arguDown">
+					<div>
+						<label for="" class="language_Lettering"></label>
+						<input type="text" placeholder="You are the one" />
+					</div>
+					<div>
+						<label for="" class="language_fonts"></label>
+						<span>Arial</span>
+						<span>Corbal</span>
+						<span>Segoe print</span>
+					</div>
+					<div>
+						<label for="" class="language_fontSize"></label>
+						<span>6</span>
+						<span>8</span>
+						<span>10</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="completeOrder">
+				<div class="back">
+					<div class="Language_back">
+						<img src="../../images/industry/back.png" />
+						<span class="language_return"></span>
+					</div>
+					
+				</div>
+				<div></div>
+				<div class="chooseProductInfo">
+					<table cellpadding="4">
+						<tr>
+							<td style="width:150px;" class="Language_singlePrice language_unitPrice">价格</td>
+							<td>￥100.50</td>
+						</tr>
+						<tr>
+							<td class="Language_back_color language_color">背景</td>
+							<td class="language_blue1">蓝色</td>
+						</tr>
+						<tr>
+							<td class="Language_back_font language_fonts">型号</td>
+							<td>Arial</td>
+						</tr>
+						<tr>
+							<td class="Language_back_fontSize language_fontSize">尺寸</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td class="Language_back_KZ language_Lettering">刻字</td>
+							<td>You are the one, For my love.</td>
+						</tr>
+						<tr>
+							<td class="Language_back_num language_Quantity"></td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td class="Language_back_sendDate language_deliveryTime">收货时间</td>
+							<td>2016-12-12 12:12:12</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<a href="javascript:void(0);"  class="ok language_confirmOrder">确认定制</a>
+			<a href="javascript:void(0);" class="ok language_joinShopCart" style="display: none;">加入购物车</a>
+		</div>
+	</div>
+	<div class="detail">
+		<div class="title">
+			<span><a class="on language_ProductDetails" href="javascript:void(0);">商品详情</a>/</span>
+			<span><a class="language_comments" href="javascript:void(0);">用户评论（100）</a>/</span>
+			<span><a class="language_service" href="javascript:void(0);">服务政策</a></span>
+		</div>
+		<div class="show"><img class="show show_car" src="../../images/industry/car_show1.jpg" /></div>
+		<div class="show"><img class="show" src="../../images/industry/car_show2.jpg" /></div>
+		<div class="show"><img class="show" src="../../images/industry/car_show3.jpg" /></div>
+	</div>	
+	
+		
+		
+		
+</body>
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../common/js/headAndFoot.js"></script>
+
+<script src="../../js/industry/industryPublic.js"></script>
+<script src="../../js/industry/public1.js"></script>
+<script src="../../js/highLight.js"></script>
+<!--包含汽车图片三维显示-->
+<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script src="../../js/industry/' + unityObjectUrl + '"><\/script>');
+		-->
+</script>
+<script src="../../js/industry/order_car.js"></script>
+<!-- <script type="text/javascript" src="../../js/Loading_Language.js"></script>
+<script type="text/javascript" src="../../js/Cn_Language.js"></script>
+<script type="text/javascript" src="../../js/En_Language.js"></script> -->
+</html>
