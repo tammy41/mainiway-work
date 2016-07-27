@@ -1,0 +1,90 @@
+/*提交订单成功公用样式开始*/
+#success{
+    margin-top: 170px;
+    margin-bottom: 200px;
+}
+.success{
+    text-align: center;
+    width: 1210px;
+    margin:0 auto;
+}
+.success-b{
+    text-align: center;
+}
+.success-b p{
+    margin-top: 13px;
+    font-size: 200%;
+    color: #DB1856;
+}
+.uL{
+    width: 450px;
+}
+.uL,.oL{
+    margin: 0 auto;    
+    height: 120px;
+    margin-top: 50px;
+    position: relative;
+}
+.oL{
+    width: 400px;
+}
+.sucList{
+    text-align:left;
+    color: #666666;
+}
+.sucList li{
+    text-indent: 10px;
+    letter-spacing:2px;
+}
+.sucList li{
+    line-height: 28px;
+    color: #777;
+}
+.sucList li:nth-child(1){
+    list-style: disc;
+    line-height: 40px;
+}
+.sucList li:nth-child(2){
+    list-style: disc;
+    line-height: 25px;
+}
+.success span{
+    font-size: 16px;
+    padding-left: 5px;
+    color: #DB1856;
+}
+.oList{
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+}
+.success-bottom{
+    width: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+}
+.success-bottom div a{
+    display: block;
+    text-align: center;
+    border: 1px solid #999999;
+    width: 160px;
+    height: 30px;
+    line-height:30px;
+    color: #666666;
+}
+.check-order{
+    margin-left: 20px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+/*提交订单成功公用样式结束*/
+
+.navlist{
+    display: none;
+}
