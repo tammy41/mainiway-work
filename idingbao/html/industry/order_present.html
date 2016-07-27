@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Custom Made Present</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link href="../../common/css/base.css" rel="stylesheet" />
+    <!--common.css | 公共样式-->
+    <link href="../../common/css/common.css" rel="stylesheet" />
+    <!--industry模块公用样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/industry/industryCommon.css" />
+    <!--made.css | 下单页面样式-->
+    <link href="../../css/industry/present.css" rel="stylesheet" />
+</head>
+
+<body class="payfor" tagert = "list_present.html">
+    <div class="info">
+        <div class="mbxnav">
+            当前位置：
+            <a href="../../index.html">首页</a>
+            <a href="industry.html">行业</a>
+            <a href="list_present.html">礼物</a>
+            <a href="order_present.html">礼品定制</a>
+        </div>
+        <div class="made clearfix">
+            <div class="imgzoom">
+                <img src="../../images/industry/present_sketch1.png" alt="" style="height: 400px;" />
+                <div class="imgcontainer">
+                    <span _index="1"><img src="../../images/industry/present_pic1.png" alt="" /></span>
+                    <span _index="1"><img src="../../images/industry/present_pic2.jpg" alt="" /></span>
+                    <span _index="1"><img src="../../images/industry/present_pic3.jpg" alt="" /></span>
+                </div>
+            </div>
+            <div class="maderight">
+                <div>青花瓷U盘</div>
+                <div>高端中国风，高档时尚品，彰显独特传统魅力。</div>
+                <div>￥100.50</div>
+                <div class="chooseOrder">
+                    <div></div>
+                    <div class="argu">
+                        <div>颜色:</div>
+                        <div class="Language_blurcolor" t="selectColor" v="1">颜色选择</div>
+                    </div>
+                    <div class="chooseColor arguDown">
+                        <center>
+                            <div class="color colorblue">
+                                <div></div>
+                                <div>蓝色</div>
+                            </div>
+                            <div class="color colorgreen">
+                                <div></div>
+                                <div>白色</div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="argu">
+                        <div class="Language_carve">刻字:</div>
+                        <div class="Language_chooseCarveContent">点击选择刻字内容</div>
+                    </div>
+                    <div class="arguDown">
+                        <div>
+                            <label for="">刻字：</label>
+                            <input type="text" placeholder="You are the one" />
+                        </div>
+                        <div>
+                            <label for="">字体：</label>
+                            <span>Arial</span>
+                            <span>Corbal</span>
+                            <span>Segoe print</span>
+                        </div>
+                        <div>
+                            <label for="">字号：</label>
+                            <span>6</span>
+                            <span>8</span>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <div class="num">
+                        <div class="Language_carve">数量:</div>
+                        <div onclick="addNum(false)">-</div>
+                        <div><input class="num_input" type="text" width="50" value="1" onkeyup="checkNum();" maxlength="7" /></div>
+                        <div onclick="addNum(true)">+</div>
+                    </div>
+                </div>
+                <div class="completeOrder">
+                    <div class="back">
+                        <div class="Language_back">
+                            <img src="../../images/industry/back.png" />返回
+                        </div>
+                        <!-- <div class="Language_back_lblconfirmOrder">确认订单</div> -->
+                    </div>
+                    <div></div>
+                    <div class="chooseProductInfo">
+                        <table cellpadding="4">
+                            <tr>
+                                <td style="width:150px;" class="Language_singlePrice">单价：</td>
+                                <td>￥100.50</td>
+                            </tr>
+                            <tr>
+                                <td class="Language_back_color">颜色：</td>
+                                <td>蓝色</td>
+                            </tr>
+                            <tr>
+                                <td class="Language_back_font">字体：</td>
+                                <td>Arial</td>
+                            </tr>
+                            <tr>
+                                <td class="Language_back_fontSize">文字大小：</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td class="Language_back_KZ">刻字：</td>
+                                <td>You are the one, For my love.</td>
+                            </tr>
+                            <tr>
+                                <td class="Language_back_num">数量：</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td class="Language_back_sendDate">交货时间：</td>
+                                <td>2016-12-12 12:12:12</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <a href="javascript:void(0);"  class="language_confirmOrder ok">确认定制</a>
+                <a href="javascript:void(0);" class="ok language_joinShopCart" style="display: none;">加入购物车</a>
+            </div>
+        </div>
+        <p class="presentTitle clearfix">
+            <span class="productPro on Language_productDetail">商品详情</span>
+            <span class="productProSplit">/</span>
+            <span class="productPro Language_ServicePolicy">
+                用户评价<span>(100)</span>
+            </span>
+            <span class="productProSplit">/</span>
+            <span class="productPro Language_UserEvaluation">服务政策</span>
+        </p>
+        <div style="text-align:center;">
+            <img src="../../images/industry/present_detail.png" style="width:1200px;" />
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../common/js/headAndFoot.js"></script>
+<script type="text/javascript" src="../../js/industry/industryPublic.js"></script>
+<script src="../../js/industry/public1.js"></script>
+<script src="../../js/highLight.js"></script>
+<script type="text/javascript" src="../../js/industry/order_present.js"></script>
+<!-- <script type="text/javascript" src="../../js/Loading_Language.js"></script>
+<script type="text/javascript" src="../../js/Cn_Language.js"></script>
+<script type="text/javascript" src="../../js/En_Language.js"></script> -->
+</html>
