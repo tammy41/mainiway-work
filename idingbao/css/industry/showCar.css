@@ -1,0 +1,117 @@
+﻿#showCar {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    font-size: 100px;
+    cursor: w-resize;
+}
+
+#showCar img {
+    position: absolute;
+}
+.arguDown{
+    width: 480px;
+    height: 73px;
+    background: #eaeaea;
+    margin-bottom: 12px;
+    text-align: center;
+    display: none;
+}
+.arguDown a{
+    display: inline-block;
+    height: 73px;
+    margin: 0 15px;
+}
+#swithColor a{
+    margin: 0 10px;
+}
+#swithColor img {
+    width: 80px;
+    height: 30px;
+    padding: 21px 0 22px;
+    cursor: pointer;
+}
+#swithParter img {
+    width: 55px;
+    height: 55px;
+    padding: 9px;
+    cursor: pointer;
+}
+#swithParter img:hover{
+    background: #d1d1d1;
+}
+#swithDormer img{
+    width: 73px;
+    height: 73px;
+}
+#swithInterior a{
+    width: 120px;
+    overflow: hidden;
+}
+#swithInterior img,#swithLamp img{
+    height: 73px;
+
+}
+
+/*头部公用样式开始*/
+.arguDown {
+    width: 480px;
+    height: 73px;
+    background: #eaeaea;
+    margin-bottom: 12px;
+    text-align: center;
+    display: none;
+}
+.arguDown a{
+    display: inline-block;
+}
+.arguDown:last-of-type{
+    height: 120px;
+    padding: 20px 0;
+}
+.arguDown label{
+    display: inline-block;
+    color: #777;
+    width: 80px;
+}
+.arguDown input{
+    width: 340px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border: 1px solid #d1d1d1;
+    background: #eaeaea;
+}
+.arguDown>div{
+    margin-bottom: 13px;
+}
+.arguDown>div:last-of-type{
+    margin-bottom: 0;
+}
+.arguDown>div span{
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #d1d1d1;
+    color: #777;
+    cursor: pointer;
+    margin-right: 4px;
+}
+.arguDown>div span:last-of-type{
+    margin-right: 0;
+}
+.hy{
+    background: #ba124e;
+}
+.childnavlist{
+    display: block;
+}
+.downList{
+    display: none;
+}
+.downList_2{
+    display: block;
+}
+
