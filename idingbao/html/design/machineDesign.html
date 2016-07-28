@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Machine Design</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+    <!--design公用样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/design/designCommon.css">
+    <!-- main.css | 详情页样式 -->
+    <link rel="stylesheet" type="text/css" href="../../css/design/machineDesign.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/design/uploadDesign.css" />
+</head>
+
+<body>
+    <!--整个内容结构开始-->
+    <div class="banner">
+        <img src="../../images/design/machineDesign.jpg" />
+        <div class="box">
+            <div class="boxIn">
+                <a class="begin" href="Design:\\">从0开始设计</a>
+                <a href="javascript:void(0);">上传设计图</a>
+                <p>珠宝定制化平台为您打造满意的产品</p>
+            </div>
+        </div>
+    </div>
+    <div class="uploadDesign clearfix">
+        <div class="upload">
+            <img src="../../images/test3dshow.png" />
+            <a href="javascript:void(0);">上传设计图</a>
+            <div></div>
+        </div>
+        <div class="submitCom">
+            <h2>描述你的设计</h2>
+            <textarea></textarea>
+            <h2>备注</h2>
+            <textarea></textarea>
+            <h3>选择为您定制的企业</h3>
+            <a href="../industry/shopCart.html">加入购物车</a>
+        </div>
+    </div>
+    <ul class="ulList clearfix">
+        <li>
+            <img src="../../images/design/machineDesign1.jpg" alt="" />
+            <h3>customization</h3>
+            <p>it is a measure of bodybuilding,a permanent memory and memorable things and experiences</p>
+        </li>
+        <li>
+            <img src="../../images/design/machineDesign2.jpg" alt="" />
+            <h3>Type something</h3>
+            <p>Service customization can be done for each specific needs of consumenrs to design a set of marketing programs,both one to one marketing.</p>
+        </li>
+        <li>
+            <img src="../../images/design/machineDesign3.jpg" alt="" />
+            <h3>Design creation</h3>
+            <p>Creation is the need to understand some of the details of life in the context of skilled skills.need to seize the inspiration to assist design.</p>
+        </li>
+        <li>
+            <img src="../../images/design/machineDesign4.jpg" alt="" />
+            <h3>Computer order</h3>
+            <p>Show your creativity,you have to pay the fruits of the harvest,a single key order</p>
+        </li>
+    </ul>
+</body>
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../common/js/headAndFoot.js"></script>
+<script type="text/javascript" src="../../js/design/designPublic.js"></script>
+<script src="../../js/highLight.js"></script>
+<script type="text/javascript" src="../../js/Loading_Language.js"></script>
+<script type="text/javascript" src="../../js/Cn_Language.js"></script>
+<script type="text/javascript" src="../../js/En_Language.js"></script>
+<script>
+	$(function(){
+		setInterval(function(){
+			$('.upload img').prop('src','../../images/test3dshow.png?a='+Math.random()+'">')
+		},2000)
+	})
+</script>
+</html>
