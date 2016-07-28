@@ -1,0 +1,101 @@
+.uploadDesign{
+    width: 1020px;
+    margin: 100px auto 0;
+    position: relative;
+}
+.upload{
+    width: 660px;
+    height: 515px;
+    background: #f7f7f7;
+    float: left;
+    box-shadow: 0 0 50px 2px #333;
+    position: relative;
+}
+.upload>div{
+    width: 50px;
+    height: 515px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-box-shadow: inset -25px 0 30px -16px #555;
+    -moz-box-shadow: inset -25px 0 30px -16px #555;
+    box-shadow: inset -25px 0 30px -16px #555;
+}
+.upload>img{
+    width: 380px;
+    height: 380px;
+    display: block;
+    margin: 55px auto 0;
+}
+.upload>a,.submitCom>a{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -150px;
+    display: block;
+    width: 300px;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    background: #f4326f;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.submitCom{
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background: #f7f7f7;
+    box-shadow: 0 0 30px 2px #555;
+    padding-top: 10px;
+}
+.submitCom h2{
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #555757;
+    font-weight: normal;
+}
+.submitCom textarea{
+    width: 376px;
+    resize: none;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    border-left: none;
+    border-right: none;
+    background: #f7f5f6;
+}
+.submitCom textarea:first-of-type{
+    height: 125px;
+}
+.submitCom textarea:last-of-type{
+    height: 50px;
+}
+.submitCom h3{
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    background: #f7f5f6;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #9a9899;
+    margin-top: 30px;
+}
+
+/*头部公用样式开始*/
+.childnavlist{
+    display: block;
+}
+.downList{
+    display: none;
+}
+.downList_3{
+    display: block;
+}
+
+/*头部公用样式结束*/
