@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Activety Detail</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+    <!--社区公用样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/community/communityPublic.css" />
+    <!--文本编辑器css-->
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/froala_editor.min.css" />
+</head>
+
+<body>
+<div class="communityMain">
+    <div class="breadCumbs clearfix" style="border-bottom:#777777 solid 1px; padding-bottom:10px; margin: 20px auto 30px;">
+        <p>当前位置：</p>
+        <a href="javascript:void(0);">社区</a>
+        <a href="javascript:void(0);">活动</a>
+        <a href="javascript:void(0);">发起话题</a>
+    </div>
+    <div class="initiateTopic">
+        <span>话题标题：</span>
+        <input type="text" placeholder="请填写话题的标题">
+    </div>
+    <div class="editBox">
+        <div id="editor">
+            <div id='edit' style="margin-top: 30px;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="comfirmtext">
+        <p>当前已经输入<span>0</span>个字符，您还可以输入10000个字符</p>
+    </div>
+    <button class="proactivi">发起活动</button>
+</div>
+</body>
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../common/js/headAndFoot.js"></script>
+
+<script type="text/javascript" src="../../js/community/communityPublic.js"></script>
+
+<script src="../../js/froala_editor/froala_editor.min.js"></script>
+<!--[if lt IE 9]>
+<script src="../../js/froala_editor/froala_editor_ie8.min.js"></script>
+<![endif]-->
+<script src="../../js/froala_editor/plugins/tables.min.js"></script>
+<script src="../../js/froala_editor/plugins/lists.min.js"></script>
+<script src="../../js/froala_editor/plugins/colors.min.js"></script>
+<script src="../../js/froala_editor/plugins/media_manager.min.js"></script>
+<script src="../../js/froala_editor/plugins/font_family.min.js"></script>
+<script src="../../js/froala_editor/plugins/font_size.min.js"></script>
+<script src="../../js/froala_editor/plugins/block_styles.min.js"></script>
+<script src="../../js/froala_editor/plugins/video.min.js"></script>
+
+<script>
+    $(function () {
+        $('#edit').editable({ inlineMode: false, alwaysBlank: true })
+    });
+</script>
+<script src="../../js/Loading_Language.js"></script>
+<script src="../../js/Cn_Language.js"></script>
+<script src="../../js/En_Language.js"></script>
+<script src="../../js/date/laydate.js"></script>
+</html>
