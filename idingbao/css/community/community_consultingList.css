@@ -1,0 +1,73 @@
+.consulting_list{
+	width: 1200px;
+	margin: 30px auto;
+}
+.consulting_main{
+	width: 882px;
+	float: left;
+	margin: 0 auto;
+}
+
+.consulting{
+	width: 880px;
+	padding: 30px 0;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.consulting img{
+	float: left;
+	margin-left: 30px;
+}
+.des{
+	width: 600px;
+	margin-left: 17px;
+}
+.des span:nth-child(1){
+	font-size: 16px;
+	color: #DB1856;
+}
+.des span:nth-child(2){
+	font-size: 16px;
+	color: #333333;
+}
+.des p:nth-child(1){
+	margin-bottom:10px;
+}
+.des p:nth-child(2){
+	font-size: 12px;
+	color: #999999;
+	margin-bottom:10px;
+}
+.des p:nth-child(3){
+	font-size: 12px;
+	color: #666666;
+	line-height: 24px;
+}
+
+/*侧边栏样式设置开始*/
+aside{
+	width: 290px;
+	float: right;
+}
+
+.hot_articles{
+	border:1px solid #DDDDDD;
+	padding:20px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+}
+.hot_articles h3{
+	color: #DB1856;
+	font-weight: normal;
+	margin-bottom:10px;
+}
+.hot_articles li{
+	font-size: 12px;
+    border-bottom: 1px dashed #D2D2D2;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.hot_articles li a{
+	color: #333333;
+	
+}

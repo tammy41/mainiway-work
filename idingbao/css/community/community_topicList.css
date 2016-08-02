@@ -1,0 +1,96 @@
+.topic_list{
+	width: 1200px;
+	margin: 30px auto;
+}
+.topic_main{
+	width: 882px;
+	float: left;
+	margin: 0 auto;
+}
+.topic{
+	width: 820px;
+	padding: 30px;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.topic p:nth-child(1){
+	margin-bottom:10px;
+	font-size: 16px;
+}
+.topic p:nth-child(2){
+	font-size: 12px;
+	color: #999999;
+	margin-bottom:5px;
+}
+.topic p img{
+	border-radius:50%;vertical-align:middle;
+}
+.topic span:nth-of-type(1){
+	color: #999999;
+	margin-left:5px;
+}
+.topic p:nth-child(2) span:nth-child(3){
+	color: #999999;
+	margin-left:35px;
+}
+.topic p:nth-child(3){
+	font-size: 12px;
+	color: #555757;
+	line-height: 24px;
+}
+.topic p a{
+	font-size: 12px;
+	color: #1189da;
+	margin-left: 30px;
+}
+
+
+/*侧边栏样式设置开始*/
+aside{
+	width: 290px;
+	float: right;
+}
+.launch{
+	
+	margin-bottom: 20px;
+	text-align: center;
+}
+.launch>a{
+	display: block;
+	width: 290px;
+	height:60px;
+	background-color: #DB1856;
+	
+}
+.launch>a>img{
+	margin-bottom: -5px;
+}
+
+.launch>a>span{
+	margin-left: 15px;
+	color: #FFFFFF;
+	font-size: 24px;
+	
+	line-height: 60px;
+}
+.hot_topic{
+	border:1px solid #DDDDDD;
+	padding:20px;
+	background-color: #FFFFFF;
+}
+ .hot_topic h3{
+	color: #DB1856;
+	font-weight: normal;
+	margin-bottom:10px;
+}
+.hot_topic li{
+	font-size: 14px;
+    border-bottom: 1px dashed #D2D2D2;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.hot_topic li a{
+	color: #333333;
+	
+}
+

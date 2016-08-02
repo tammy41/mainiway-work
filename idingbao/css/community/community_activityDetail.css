@@ -1,0 +1,153 @@
+.infor{
+    width: 1200px;
+    margin: 0 auto;
+}
+.ActivitydetailBox {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Activitydetailleft {
+    width: 845px;
+    padding-bottom: 20px;
+    float: left;
+    border: #cdcdcd solid 1px;
+    background-color: #fff;
+}
+
+.Activitydetailright {
+    width: 340px;
+    float: right;
+    height: 850px;
+}
+
+.Activitydetailleft-top {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Activitydetailleft-top h3 {
+    margin-top: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+
+
+.Activitydetailleft .Activitydetailleft-top b {
+    color: #DB1856;
+}
+.Activitydetailleft-top>p{
+	position: relative;
+	margin-bottom: 20px;
+}
+.Activitydetailleft-top>p>img{
+	position: absolute;
+	top: 50%;
+	margin-top: -6px;
+}
+.Activitydetailleft-top>p>img:nth-of-type(2){
+	margin-left: 40px;
+}
+.Activitydetailleft-top>p>img:nth-of-type(3){
+	margin-left: 50px;
+}
+.Activitydetailleft-top p>span:nth-of-type(1){
+	margin-left: 20px;
+	color: #1189DA;
+	font-size: 12px;
+}
+.Activitydetailleft-top p>span:nth-of-type(2){
+	margin-left: 60px;
+	color: #999999;
+	font-size: 12px;
+}
+.Activitydetailleft-top p>span:nth-of-type(3){
+	margin-left: 70px;
+	color: #999999;
+	font-size: 12px;
+}
+.Activitydetailtext {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.Activitydetailtext p {
+	font-size: 12px;
+	color: #666666;
+    line-height: 28px;
+}
+
+.Activitydetailtext span {
+}
+
+.Activitydetailtext #timer {
+    font-size: 24px;
+    color: #db1856;
+}
+
+.Activitydetailtext button {
+    width: 220px;
+    height: 38px;
+    background-color: #DB1856;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.alreadyorder {
+    margin-top: 40px;
+    overflow: hidden;
+    border-top: 1px solid #DDDDDD;
+    padding-top: 20px;
+}
+
+.alreadyorder span {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.alreadyordercontent {
+    width: 50px;
+    float: left;
+    margin-right: 30px;
+}
+
+.alreadyordercontent p {
+    text-align: center;
+    text-indent: 0px;
+}
+
+.alreadyordercontent img{
+	border-radius: 50%;
+}
+
+.promotor1 {
+    height: 770px;
+    border: #cdcdcd solid 1px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.promotor1 h3 {
+    color: #DB1856;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.promotor1 img {
+    width: 272px;
+}
+
+.promotor1 p {
+    width: 272px;
+    margin-bottom: 40px;
+    color: #333333;
+    margin-top: 5px;
+    font-size: 14px;
+}

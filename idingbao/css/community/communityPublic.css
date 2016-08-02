@@ -1,0 +1,96 @@
+/*logo*/
+.logo{
+    margin-right: 20px !important;
+}
+
+/*顶部导航*/
+.personalNav{
+    margin-left: 50px;
+}
+.personalNav a{
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 0 20px;
+    color: #fff !important;
+}
+.personalNav a:hover{
+    border-bottom: 1px solid #fff !important;
+}
+.personalNav a.current{
+    border-bottom: 1px solid #fff;
+}
+
+/*面包屑导航开始*/
+.breadCumbs{
+    margin: 20px 0 10px;
+}
+.breadCumbs p{
+    float: left;
+}
+.breadCumbs a{
+    padding: 0 15px 0 10px;
+    background: url("../../images/public/tag2.png") no-repeat right center;
+    color: #444;
+}
+.breadCumbs a:last-child{
+    background: none;
+}
+.breadCumbs a:first-child{
+    position: relative;
+}
+.breadCumbs a:first-child:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    background: url("../../images/public/leftNavSprities.png") no-repeat;
+    background-position: 0 -94px;
+}
+/*面包屑导航结束*/
+
+/*主体公用样式开始*/
+.communityMain{
+    width: 1200px;
+    margin: 0 auto;
+}
+.initiateTopic span{
+    margin-right: 50px;
+}
+.initiateTopic input{
+    width: 370px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    padding-left: 10px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.editBox{
+    width: 100%;
+}
+/*主体公用样式结束*/
+/*主体公用样式结束*/
+.comfirmtext p{
+    border-left:#000000 solid 1px;
+    border-right:#000000 solid 1px;
+    border-bottom:#000000 solid 1px;
+    text-align:right;
+    padding-right:10px;
+    line-height:22px;
+    color:#939595;
+    margin-bottom:20px;
+}
+.proactivi{
+    width:220px;
+    height:40px;
+    background-color:#db1856;
+    color:#fff;
+    border:0;
+    margin-bottom:50px;
+}
+/*主体公用样式结束*/
+
