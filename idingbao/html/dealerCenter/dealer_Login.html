@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Dealer login</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+    <!--factorysettledown.css | 经销商登录样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/dealerLogin.css" />
+</head>
+<body>
+<div class="l_content">
+    <div class="l_left">
+        <img src="../../images/dealerCenter/loginimg_dealer.png" alt=""/>
+    </div>
+    <div class="l_right">
+        <div class="l_rightBox" id="loginBox">
+            <h1>登录</h1>
+            <p class="login_remind"></p>
+            <div class="rl_username1">
+                <label><i class="rl_iuser"></i></label>
+                <input type="text" id="username" name="username" placeholder="用户名" />
+            </div>
+            <div class="rl_password1">
+                <label><i class="rl_ipass"></i></label>
+                <input type="text" id="password" name="password" placeholder="密码" />
+            </div>
+            <div class="rl_fastforgettext">
+                <a class="rl_fastregistertext" href="#">快速注册</a>
+                <a class="rl_forgetpasswordtext js_forgetPW" href="javascript:void(0);">忘记密码?</a>
+            </div>
+            <a href="dealerCenter_index.html" class="l_jumpbutton" id="btn_login">登 录</a>
+        </div>
+        <div class="l_rightBox" id="validateUser">
+            <h1>找回密码</h1>
+            <input  class="l_inputbox" id="account" type="text" name="yanzheng" placeholder="请输入手机号码/邮箱地址"/>
+            <p class="rl_errorremind"></p>
+            <button class="l_jumpbutton" id="btn_next">下一步</button>
+        </div>
+        <div class="l_rightBox" id="findPwdBox">
+            <h1>找回密码<span class="validateType" tag="phone">登录邮箱账号获取验证码</span></h1>
+            <div class="l_sendidentify">
+                <input type="text" id="txt_validateCode" name="username" placeholder="请输入短信验证码" />
+                <a href="javascript:void(0);" id="sendCode">再次发送60S</a>
+            </div>
+            <input class="l_inputbox" id="setPassWord" type="text" name="yanzheng" placeholder="请输入新密码"/>
+            <input class="l_inputbox" id="setPW_again" type="text" name="yanzheng" placeholder="请再次输入新密码"/>
+            <button class="l_jumpbutton" id="btn_savePwd">确认</button>
+            <p class="findPW_remaind"></p>
+        </div>
+        <div class="l_rightBox" id="complete">
+            <h1>找回密码</h1>
+            <div class="l_passwordaltersuccess">
+                <img src="../../images/dealerCenter/bigduigou.png"/>
+                <h2>密码修改成功！</h2>
+            </div>
+            <button class="l_jumpbutton" id="btn_complete">确认</button>
+        </div>
+    </div>
+</div>
+</body>
+<!--js-->
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../common/js/headAndFoot2.js"></script>
+<script src="../../js/dealerCenter/dealerCenterPublic.js"></script>
+
+<!-- <script src="../../js/Loading_Language.js"></script>
+<script src="../../js/Cn_Language.js"></script>
+<script src="../../js/En_Language.js"></script> -->
+</html>
