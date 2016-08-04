@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>经销商</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/dealerCenterCommon.css" />
+    <!--省市区三级联动组件样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/linkage.css" />
+    <!--基础管理模块样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/dealerInfo.css" />
+</head>
+<body>
+<div class="box dealerInfo clearfix">
+    <!--右边主体-->
+    <div class="dealerCenter">
+        <div class="breadCumbs">
+            <a href="javascript:void(0);">首页</a>
+            <a href="javascript:void(0);">经销商信息</a>
+        </div>
+        <table class="info">
+            <tr><th><i>* </i>经销商名称</th><td><input type="text" /></td></tr>
+            <tr><th><i>* </i>联系人</th><td><input type="text" /></td></tr>
+            <tr><th><i>* </i>手机号码</th><td><input type="text" /></td></tr>
+            <tr><th>固定电话</th><td><input type="text" /></td></tr>
+            <tr><th><i>* </i>电子邮箱</th><td><input type="text" /><span>&nbsp;作为登录账号使用</span></td></tr>
+            <tr>
+                <th>地址</th>
+                <td>
+                    <div>
+                        <select id="loc_province" class="selectText"></select>
+                        <select id="loc_city" class="selectText selectMargin"></select>
+                        <select id="loc_town" class="selectText"></select>
+                    </div>
+                </td>
+            </tr>
+            <tr><th></th><td><textarea>详细地址</textarea></td></tr>
+            <tr><th valign="top">说明</th><td><textarea>此处即为 工厂入驻时的营业范围。</textarea></td></tr>
+            <tr><th></th><td><a class="save" href="javascript:;">保 存</a>&nbsp;<a class="cancel" href="javascript:;">取 消</a></td></tr>
+        </table>
+    </div>
+</div>
+</body>
+<!--js-->
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<!--省市区三级联动效果-->
+<script src="../../js/location.js"></script>
+<script src="../../js/select2.js"></script>
+<script src="../../js/select2_locale_zh-CN.js"></script>
+
+<script src="../../js/dealerCenter/dealerCenterPublic.js"></script>
+<script src="../../js/dealerCenter/leftNav.js"></script>
+<script>
+    $(function(){
+        // 显示下拉
+        $('dl dt').click(function(){
+            $(this).siblings('dd').show()
+        })
+
+        // 选中下拉内容，关闭下拉
+        $('dl dd').click(function(){
+            var txt=$(this).text()
+            $(this).siblings('dt').text(txt)
+            $(this).parent().find('dd').hide()
+        })
+
+        // 点击空白处，关闭下拉
+        $(document).click(function(e){
+            var con=$('dl')
+            if(!con.is(e.target) && con.has(e.target).length === 0){
+                $('dl dd').hide()
+            }
+            
+        })
+    })
+</script>
+</html>
