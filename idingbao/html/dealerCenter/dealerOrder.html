@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>经销商</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/dealerCenterCommon.css" />
+    <!--基础管理模块样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/dealerOrder.css" />
+    <!--分页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/simplePagination.css" />
+</head>
+<body>
+<div class="box dealerOrder clearfix">
+    <!--右边主体-->
+    <div class="dealerCenter">
+        <div class="breadCumbs">
+            <a href="javascript:void(0);">首页</a>
+            <a href="javascript:void(0);">退货管理</a>
+        </div>
+        <div class="section">
+            <div class="head clearfix">
+                <span class="on">所有订单</span>
+                <span>代收款<i>2</i></span>
+                <div class="search">
+                    <input type="text">
+                    <a class="btn btn-primary" href="javascript:;">搜索</a>
+                    
+                </div>
+            </div>
+            <div class="tab_box">
+                <table class="list">
+                    <tr>
+                        <th>商品</th>
+                        <th align="left">订单号</th>
+                        <th>买家</th>
+                        <th>交易金额</th>
+                        <th class="refund_status">
+                            <div>
+                                <samp>全部状态</samp>
+                                <i></i>
+                                <ul style="display:none">
+                                    <li>待审核</li>
+                                    <li>待收货</li>
+                                    <li>退货关闭</li>
+                                    <li>退货完成</li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span class="blue">退单号：DJ25689554255555</span>
+                                <div class="shopname">
+                                    <img src="../../images/dealerCenter/opImg.png">
+                                    <samp>商品名称</samp>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>FS851551212551</span>
+                            <time>购买时间：2016-06-08</time>
+                        </td>
+                        <td>姓名</td>
+                        <td class="purple">￥380</td>
+                        <td class="red">待审核</td>
+                        <td><a class="blue" href="dealerRefund.html">退货详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span class="blue">退单号：DJ25689554255555</span>
+                                <div class="shopname">
+                                    <img src="../../images/dealerCenter/opImg.png">
+                                    <samp>商品名称</samp>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>FS851551212551</span>
+                            <time>购买时间：2016-06-08</time>
+                        </td>
+                        <td>姓名</td>
+                        <td class="purple">￥380</td>
+                        <td class="red">待审核</td>
+                        <td>
+                            <button>确认收货</button>
+                            <a class="blue" href="javascirpt:;">退货详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span class="blue">退单号：DJ25689554255555</span>
+                                <div class="shopname">
+                                    <img src="../../images/dealerCenter/opImg.png">
+                                    <samp>商品名称</samp>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>FS851551212551</span>
+                            <time>购买时间：2016-06-08</time>
+                        </td>
+                        <td>姓名</td>
+                        <td class="purple">￥380</td>
+                        <td class="red">待审核</td>
+                        <td><a class="blue" href="dealerRefund.html">退货详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span class="blue">退单号：DJ25689554255555</span>
+                                <div class="shopname">
+                                    <img src="../../images/dealerCenter/opImg.png">
+                                    <samp>商品名称</samp>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>FS851551212551</span>
+                            <time>购买时间：2016-06-08</time>
+                        </td>
+                        <td>姓名</td>
+                        <td class="purple">￥380</td>
+                        <td class="red">待审核</td>
+                        <td><a class="blue" href="dealerRefund.html">退货详情</a></td>
+                    </tr>
+                </table>
+                <div id="paging" class="page"></div>
+            </div> 
+        </div>
+    </div>
+</div>
+</body>
+<!--js-->
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../js/simplePagination.js"></script>
+<script src="../../js/page.js"></script>
+<script src="../../js/dealerCenter/dealerCenterPublic.js"></script>
+<script src="../../js/dealerCenter/leftNav.js"></script>
+<script>
+    $(function(){
+        for (var i = 0; i < $('.head span').length; i++) {
+            $('.head span').eq(i).css('left',150*i)
+        };
+        
+        $('.head span').click(function(){
+            $(this).addClass('on').siblings('span').removeClass('on')
+            $(this).find('i').remove()
+        })
+
+
+        $('.refund_status div').click(function(){
+            $(this).find('ul').toggle()
+        })
+
+        $('.refund_status li').click(function(e){
+            if(e && e.stopPropagation){
+                e.stopPropagation()
+            }else{
+                e.cancelBubble();
+            }
+            var str=$(this).text();
+            $(this).parents('.refund_status').find('samp').html(str)
+            $(this).parent().hide();
+        })
+    })
+</script>
+</html>

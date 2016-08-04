@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>经销商</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/dealerCenterCommon.css" />
+    <!--基础管理模块样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/dealerOrder2.css" />
+    <!--分页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/simplePagination.css" />
+</head>
+<body>
+<div class="box dealerOrder2 clearfix">
+    <!--右边主体-->
+    <div class="dealerCenter">
+        <div class="breadCumbs">
+            <a href="javascript:void(0);">首页</a>
+            <a href="javascript:void(0);">订单管理</a>
+        </div>
+        <div class="section">
+            <div class="head clearfix">
+                <span class="on">所有订单</span>
+                <span>待付款<i>2</i></span>
+                <span>待提货<i>2</i></span>
+                <div class="search">
+                    <input type="text">
+                    <a class="btn btn-primary" href="javascript:;">搜索</a>
+                    <a class="btn btn-info" href="javascript:;">高级</a>
+                </div>
+            </div>
+            <div class="senior">
+                <ul class="clearfix">
+                    <li>提交时间：<input type="text"> - <input type="text"><span>1个月</span><span>3个月</span><span>6个月</span><span>12个月</span></li>
+                    <li>订单编号：<input type="text"></li>
+                    <li>买家昵称：<input type="text"></li>
+                    <li>商品名称：<input type="text"></li>
+                    <li class="refund_status">
+                        <label>订单状态：</label>
+                        <div>
+                            <samp>审核中</samp>
+                            <i></i>
+                            <ul>
+                                <li>待审核</li>
+                                <li>已提交</li>
+                                <li>审核中</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="refund_status">
+                        <label>付款方式：</label>
+                        <div>
+                            <samp>现金</samp>
+                            <i></i>
+                            <ul>
+                                <li>银行卡</li>
+                                <li>现金</li>
+                                <li>支付宝</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <button>高级搜索</button>
+                <button class="close">关闭高级搜索</button>
+            </div>
+            <div class="tab_box">
+                <table class="list">
+                    <tr>
+                        <th class="refund_status">
+                            <div>
+                                <samp>三个月内</samp>
+                                <i></i>
+                                <ul>
+                                    <li>三个月内</li>
+                                    <li>两个月内</li>
+                                    <li>一个月内</li>
+                                    <li>一个星期内</li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th align="left">订单</th>
+                        <th>收货人</th>
+                        <th>总金额</th>
+                        <th>预付款</th>
+                        <th class="refund_status">
+                            <div>
+                                <samp>全部状态</samp>
+                                <i></i>
+                                <ul>
+                                    <li>待审核</li>
+                                    <li>待收货</li>
+                                    <li>退货关闭</li>
+                                    <li>退货完成</li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span class="blue">退单号：DJ25689554255555</span>
+                                <div class="shopname">
+                                    <img src="../../images/dealerCenter/opImg.png">
+                                    <samp>商品名称</samp>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>FS851551212551</span>
+                            <time>购买时间：2016-06-08</time>
+                        </td>
+                        <td>姓名</td>
+                        <td class="purple">￥380</td>
+                        <td>
+                            <span class="red">￥380</span>
+                            <small>在线支付</small>
+                        </td>
+                        <td>
+                            <span class="red">待审核</span>
+                            <a href="javascript:;" class="view blue">查看物流状态</a>
+                        </td>
+                        <td>
+                            <a class="sure receive">收款</a>
+                            <a class="blue" href="dealerOrderDetail.html">订单详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span class="blue">退单号：DJ25689554255555</span>
+                                <div class="shopname">
+                                    <img src="../../images/dealerCenter/opImg.png">
+                                    <samp>商品名称</samp>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>FS851551212551</span>
+                            <time>购买时间：2016-06-08</time>
+                        </td>
+                        <td>姓名</td>
+                        <td class="purple">￥380</td>
+                        <td>
+                            <span class="red">￥380</span>
+                            <small>在线支付</small>
+                        </td>
+                        <td>
+                            <span class="red">待审核</span>
+                            <a href="javascript:;" class="view blue">查看物流状态</a>
+                        </td>
+                        <td>
+                            <a class="sure receive">收款</a>
+                            <a class="blue" href="dealerOrderDetail.html">订单详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span class="blue">退单号：DJ25689554255555</span>
+                                <div class="shopname">
+                                    <img src="../../images/dealerCenter/opImg.png">
+                                    <samp>商品名称</samp>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>FS851551212551</span>
+                            <time>购买时间：2016-06-08</time>
+                        </td>
+                        <td>姓名</td>
+                        <td class="purple">￥380</td>
+                        <td>
+                            <span class="red">￥380</span>
+                            <small>在线支付</small>
+                        </td>
+                        <td>
+                            <span class="red">待审核</span>
+                            <a href="javascript:;" class="view blue">查看物流状态</a>
+                        </td>
+                        <td>
+                            <a class="sure receive">收款</a>
+                            <strong>尾款未支付</strong>
+                            <a class="blue" href="dealerOrderDetail.html">订单详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span class="blue">退单号：DJ25689554255555</span>
+                                <div class="shopname">
+                                    <img src="../../images/dealerCenter/opImg.png">
+                                    <samp>商品名称</samp>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>FS851551212551</span>
+                            <time>购买时间：2016-06-08</time>
+                        </td>
+                        <td>姓名</td>
+                        <td class="purple">￥380</td>
+                        <td>
+                            <span class="red">￥380</span>
+                            <small>门店支付</small>
+                        </td>
+                        <td>
+                            <span class="red">待审核</span>
+                            <a href="javascript:;" class="view blue">查看物流状态</a>
+                        </td>
+                        <td>
+                            <button class="sure">确认收货</button>
+                            <a class="blue" href="dealerOrderDetail.html">订单详情</a>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <div id="paging" class="page"></div>
+            </div> 
+        </div>
+    </div>
+</div>
+</body>
+<!--js-->
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../js/simplePagination.js"></script>
+<script src="../../js/page.js"></script>
+<script src="../../js/dealerCenter/dealerCenterPublic.js"></script>
+<script src="../../js/dealerCenter/leftNav.js"></script>
+
+
+<script>
+    $(function(){
+        // 头部tab初始化
+        for (var i = 0; i < $('.head span').length; i++) {
+            $('.head span').eq(i).css('left',151*i)
+        };
+        
+        // tab点击效果
+        $('.head span').click(function(){
+            $(this).addClass('on').siblings('span').removeClass('on')
+            $(this).find('i').remove()
+        })
+
+        // 下拉框
+        $('.refund_status div').click(function(){
+            $(this).find('ul').toggle()
+        })
+
+        $('.refund_status li').click(function(e){
+            if(e && e.stopPropagation){
+                e.stopPropagation()
+            }else{
+                e.cancelBubble();
+            }
+            var str=$(this).text();
+            $(this).parents('.refund_status').find('samp').html(str)
+            $(this).parent().hide();
+        })
+        // 高级按钮
+        $('.btn-info').click(function(){
+            $('.senior').toggle();
+        })
+
+        $('.close').click(function(){
+            $('.senior').hide();
+        })
+    })
+
+</script>
+</html>
