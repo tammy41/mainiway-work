@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>经销商</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/dealerCenterCommon.css" />
+    <!--基础管理模块样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/dealerCenter/controller.css" />
+</head>
+<body>
+<div class="box controller clearfix">
+    <!--右边主体-->
+    <div class="dealerCenter">
+        <div class="breadCumbs">
+            <a href="javascript:void(0);">经销商中心<span>控制台</span></a>
+        </div>
+        <div class="section">
+            <div class="important">
+                <div class="sm_left"><img src="../../images/dealerCenter/car.jpg"/></div>
+                <div class="lg_right">上海永达东昌路4S店</div>
+            </div>
+            <div class="secondary clearfix">
+                <h4>交易提醒</h4>
+                <div class="sm_left">今日新订单 <span class="red">16</span></div>
+                <ul class="lg_right">
+                    <li>待付款 <span class="red">6</span></li>
+                    <li>待确认 <span class="red">6</span></li>
+                    <li>待发货 <span class="red">6</span></li>
+                    <li>待提货 <span class="red">6</span></li>
+                    <li>待收货 <span class="red">6</span></li>
+                </ul>
+            </div>
+            <div class="secondary not">
+                <h4><span class="fl">订单趋势</span><span class="fr">报表日期：2016/05/22-2016/05/28</span></h4>
+                <div class="pillar">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="aside">
+            <div class="top_zone">
+                <h4>公告</h4>
+                <ul>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                </ul>
+            </div>
+            <div class="top_zone">
+                <h4>客服</h4>
+                <ul>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                    <li><a href="javascript:;">[特惠]好奇纸尿裤，满499</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--js-->
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../js/echarts-all.js"></script>
+<script src="../../js/dealerCenter/dealerCenterPublic.js"></script>
+<script src="../../js/dealerCenter/leftNav.js"></script>
+<script>
+var pillar=echarts.init(document.getElementsByClassName('pillar')[0])
+
+option = {
+    title : {
+        text: '',
+        subtext: ''
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['','']
+    },
+    toolbox: {
+        show : false,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            name : '订单'
+        }
+    ],
+    series : [
+        {
+            name:'蒸发量',
+            type:'bar',
+            data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+        {
+            name:'降水量',
+            type:'bar',
+            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+            markPoint : {
+                data : [
+                    {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                    {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : '平均值'}
+                ]
+            }
+        }
+    ]
+};
+ pillar.setOption(option)
+</script>
+</html>
