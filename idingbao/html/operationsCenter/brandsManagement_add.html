@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>运营中心-基本资料-品牌管理</title>
+    <meta name="author" content="EWININFO" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <!--IE11 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <!--IE10 mode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--IE9 mode-->
+    <!-- base.css | 元素还原基础样式 -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css" />
+    <!--common.css | 公共样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/operationsCenter/operationsCenterCommon.css" />
+    <!--bd.css | 基础数据模块样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/operationsCenter/bd.css" />
+
+</head>
+<body>
+<div class="main clearfix">
+    <div class="op_center fr">
+        <div class="breadCumbs">
+            <a href="javascript:void(0);">首页</a>
+            <a href="javascript:void(0);">品牌管理</a>
+            <a href="javascript:void(0);">新增管理</a>
+        </div>
+        <ul class="mainBody1">
+            <li class="clearfix op_li">
+                <label class="op_label" for=""><span class="red">*</span>品牌名称</label>
+                <div class="op_select fl">
+                    <p class="op_status">请选择</p>
+                    <ol class="dropDown dropDown1">
+                        <li>请选择</li>
+                        <li>耐克</li>
+                        <li>阿迪达斯</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="clearfix op_li">
+                <label for="" class="op_label">品牌别名</label>
+                <input type="text" class="op_input"/>
+            </li>
+            <li class="clearfix op_li">
+                <label for="" class="op_label"><span class="red">*</span>品牌LOGO</label>
+                <div class="fl">
+                    <a href="" class="op_upload">上传
+                        <input type="file" class="op_file" />
+                    </a>
+                    <span class="op_imgPrompt">每张图片大小不超过<span class="red bolder">5M</span>，支持GIF、JPG、PNG、BMP格式</span>
+                    <div class="op_logo"><img src=""></div>
+                </div>
+            </li>
+            <li class="clearfix op_li">
+                <label for="" class="op_label">品牌描述</label>
+                <textarea class="op_textarea" name="" id=""></textarea>
+            </li>
+            <li class="op_li">
+                <a href="javascript:void(0);" class="btn save-btn">保存</a>
+                <a href="javascript:void(0);" class="btn cancel-btn">取消</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<!--js-->
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../js/operationsCenter/operationsCenterPublic.js"></script>
+<script src="../../js/operationsCenter/operationsCenter_leftNav.js"></script>
+<script src="../../js/operationsCenter/brandsManagement_add.js"></script>
+</html>
